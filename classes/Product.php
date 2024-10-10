@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . "/Type.php";
+require_once __DIR__ . "/Food.php";
 
 class Product
 {
@@ -36,6 +37,6 @@ class Product
 
     function getPrice()
     {
-        return "Prezzo: " . $this->price . "€ (al pezzo)";
+        return "Prezzo: " . $this->price . "€ (al pezzo).";
     }
 }

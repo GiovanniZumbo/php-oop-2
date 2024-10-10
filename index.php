@@ -4,8 +4,8 @@ require_once __DIR__ . "/classes/Product.php";
 
 
 
-$scrocchiazeppi = new Product("Scrocchiazeppi", "100% carne italiana", "...", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine", 23.99, new Type("Dog"));
-$tonnoFresh = new Product("Tonno Fresh", "tranci di salmone e branzino", "...", "Adatti per ogni razza di gatto. Da leccarsi i baffi", 18.99, new Type("Cat"));
+$scrocchiazeppi = new Food("Scrocchiazeppi", "100% carne italiana.", "...", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine.", 23.99, new Type("Dog"), ["Manzo", "Maiale"], "Carne");
+$tonnoFresh = new Food("Tonno Fresh", "tranci di salmone e branzino.", "...", "Adatti per ogni razza di gatto. Da leccarsi i baffi.", 18.99, new Type("Cat"), ["Salmone", "Branzino"], "Pesce");
 
 $products = [
     $scrocchiazeppi,
@@ -34,13 +34,15 @@ $products = [
                 <?php foreach ($products as $product) { ?>
 
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $product->name ?> <span class="badge text-bg-danger"><?= $product->type->animal ?></span></h5>
                                 <ul class="card-text">
                                     <li><?= $product->getInfo() ?></li>
                                     <li><?= $product->getPrice() ?></li>
+                                    <li><?= $product->getIngredients() ?></li>
+                                    <li><?= $product->getFlavour() ?></li>
                                 </ul>
 
                                 <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
