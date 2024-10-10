@@ -2,13 +2,14 @@
 
 require_once __DIR__ . "/classes/Product.php";
 
-$scrocchiazeppi = new Product("Scrocchiazeppi", "100% carne italiana", "...", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine", 23.99);
-$tonnoFresh = new Product("Tonno Fresh", "tranci di salmone e branzino", "...", "Adatti per ogni razza di gatto. Da leccarsi i baffi", 18.99);
+
+
+$scrocchiazeppi = new Product("Scrocchiazeppi", "100% carne italiana", "...", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine", 23.99, new Type("Dog"));
+$tonnoFresh = new Product("Tonno Fresh", "tranci di salmone e branzino", "...", "Adatti per ogni razza di gatto. Da leccarsi i baffi", 18.99, new Type("Cat"));
 
 $products = [
     $scrocchiazeppi,
     $tonnoFresh
-
 ]
 
 ?>
@@ -36,7 +37,7 @@ $products = [
                         <div class="card" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title"><?= $product->name ?></h5>
+                                <h5 class="card-title"><?= $product->name ?> <span class="badge text-bg-danger"><?= $product->$type->animal ?></span></h5>
                                 <ul class="card-text">
                                     <li><?= $product->getInfo() ?></li>
                                     <li><?= $product->getPrice() ?></li>
