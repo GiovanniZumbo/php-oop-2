@@ -1,6 +1,6 @@
 <?php
 
-class Toys extends Product
+class Carrier extends Product
 {
 
     //* Variables
@@ -32,6 +32,6 @@ class Toys extends Product
     {
         return
             "<li> Colori: " . $this->colours[0] . ", " . $this->colours[1] . ".</li>
-            <li> Dimensione: " . $this->dimensions . ".</li>";
+            <li> Dimensioni: " . $this->dimensions . ".</li>";
     }
 }

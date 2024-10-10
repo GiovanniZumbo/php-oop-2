@@ -3,6 +3,7 @@
 require_once __DIR__ . "/Type.php";
 require_once __DIR__ . "/Food.php";
 require_once __DIR__ . "/Toys.php";
+require_once __DIR__ . "/Carrier.php";
 
 class Product
 {
