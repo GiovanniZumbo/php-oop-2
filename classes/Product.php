@@ -12,18 +12,18 @@ class Product
     public $imageUrl;
     public $description;
     public $price;
-    public $animal;
+    public $type;
 
     //| Constructor
 
-    function __construct(string $name, string $material, string $imageUrl, string $description, float $price, Type $animal)
+    function __construct(string $name, string $material, string $imageUrl, string $description, float $price, Type $type)
     {
         $this->name = $name;
         $this->material = $material;
         $this->imageUrl = $imageUrl;
         $this->description = $description;
         $this->price = $price;
-        $this->animal = $animal;
+        $this->type = $type;
     }
 
 
