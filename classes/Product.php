@@ -10,12 +10,12 @@ class Product
 
     //* Variables
 
-    public $name;
-    public $material;
-    public $imageUrl;
-    public $description;
-    public $price;
-    public $type;
+    public string $name;
+    public string $material;
+    public string $imageUrl;
+    public string $description;
+    public float $price;
+    public Type $type;
 
     //| Constructor
 
@@ -32,13 +32,22 @@ class Product
 
     //# Methods
 
-    function getInfo()
+    public function getInfo()
     {
         return "Descrizione: " . $this->description;
     }
 
-    function getPrice()
+    public function getPrice()
     {
         return "Prezzo: " . $this->price . "€ (al pezzo).";
+    }
+
+    public function setPrice(float $price)
+    {
+        if ($price > 0) {
+            $this->price = $price;
+        } else {
+            throw new InvalidArgumentException("Il prezzo inserito non è valido");
+        }
     }
 }

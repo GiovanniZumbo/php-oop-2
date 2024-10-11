@@ -39,7 +39,7 @@ $products = [
 
                     <div class="col">
                         <div class="card">
-                            <img src=<?= $product->imageUrl ?> class="card-img-top" alt="...">
+                            <img src=<?= $product->imageUrl ?> class="card-img-top p-3" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $product->name ?> <span class="badge text-bg-danger"><?= $product->type->animal ?></span></h5>
                                 <ul class="card-text">
