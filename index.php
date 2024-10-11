@@ -4,10 +4,10 @@ require_once __DIR__ . "/classes/Product.php";
 
 
 
-$scrocchiazeppi = new Food("Scrocchiazeppi", "100% carne italiana.", "https://rep.grupposme.net/RepAP?code=D1446868&skey=968356899d00369a281ad152d81484e5&resize=225", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine.", 23.99, new Type("Cane"), ["Manzo", "Maiale"], "Carne");
-$tonnoFresh = new Food("Tonno Fresh", "tranci di salmone e branzino.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxStx5wKTI34cMjQDT2mY9uyhNwj7P_LsIpw&s", "Adatti per ogni razza di gatto. Da leccarsi i baffi.", 18.99, new Type("Gatto"), ["Salmone", "Branzino"], "Pesce");
-$ossoCordato = new Toys("Osso di corda", "100% Cotone", "https://arcaplanet.vtexassets.com/arquivos/ids/223864/trixie-cane-gioco-corda.jpg?v=637454736645100000", "Corda giocattolo pensata per i cani.", 7.99, new Type("Cane"), ["Blu", "Bianco"], "Medio-piccolo");
-$trasportino = new Carrier("Trasportino Medio", "Plastica", "https://arcaplanet.vtexassets.com/arquivos/ids/277811/yes-trasportino-sierra-plastica-eco-azzurro.jpg?v=638053154131770000", "Trasportino comodo per brevi e lunghi viaggi.", 34.99, new Type("Cane/Gatto"), ["Grigio", "Verde acqua"], "30cm x 20cm x 60cm");
+$scrocchiazeppi = new Food("Scrocchiazeppi", 1, "100% carne italiana.", "https://rep.grupposme.net/RepAP?code=D1446868&skey=968356899d00369a281ad152d81484e5&resize=225", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine.", 23.99, new Type("Cane"), ["Manzo", "Maiale"], "Carne");
+$tonnoFresh = new Food("Tonno Fresh", 2, "tranci di salmone e branzino.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxStx5wKTI34cMjQDT2mY9uyhNwj7P_LsIpw&s", "Adatti per ogni razza di gatto. Da leccarsi i baffi.", 18.99, new Type("Gatto"), ["Salmone", "Branzino"], "Pesce");
+$ossoCordato = new Toys("Osso di corda", 3, "100% Cotone", "https://arcaplanet.vtexassets.com/arquivos/ids/223864/trixie-cane-gioco-corda.jpg?v=637454736645100000", "Corda giocattolo pensata per i cani.", 7.99, new Type("Cane"), ["Blu", "Bianco"], "Medio-piccolo");
+$trasportino = new Carrier("Trasportino Medio", 4, "Plastica", "https://arcaplanet.vtexassets.com/arquivos/ids/277811/yes-trasportino-sierra-plastica-eco-azzurro.jpg?v=638053154131770000", "Trasportino comodo per brevi e lunghi viaggi.", 34.99, new Type("Cane/Gatto"), ["Grigio", "Verde acqua"], "30cm x 20cm x 60cm");
 
 $products = [
     $scrocchiazeppi,

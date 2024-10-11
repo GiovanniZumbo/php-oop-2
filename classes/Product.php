@@ -4,13 +4,15 @@ require_once __DIR__ . "/Type.php";
 require_once __DIR__ . "/Food.php";
 require_once __DIR__ . "/Toys.php";
 require_once __DIR__ . "/Carrier.php";
+require_once __DIR__ . "/../traits/Data.php";
 
 class Product
 {
 
     //* Variables
 
-    public string $name;
+    use Data;
+
     public string $material;
     public string $imageUrl;
     public string $description;
@@ -19,9 +21,10 @@ class Product
 
     //| Constructor
 
-    function __construct(string $name, string $material, string $imageUrl, string $description, float $price, Type $type)
+    function __construct(string $name, int $id, string $material, string $imageUrl, string $description, float $price, Type $type)
     {
         $this->name = $name;
+        $this->id = $id;
         $this->material = $material;
         $this->imageUrl = $imageUrl;
         $this->description = $description;
