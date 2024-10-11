@@ -1,8 +1,9 @@
 <?php
 
-require_once __DIR__ . "/classes/Product.php";
-
-
+//require_once __DIR__ . "/classes/Product.php";
+require_once __DIR__ . "/classes/Food.php";
+require_once __DIR__ . "/classes/Toys.php";
+require_once __DIR__ . "/classes/Carrier.php";
 
 $scrocchiazeppi = new Food("Scrocchiazeppi", 1, "100% carne italiana.", "https://rep.grupposme.net/RepAP?code=D1446868&skey=968356899d00369a281ad152d81484e5&resize=225", "Ideali per cani di taglia piccola e media. Nutrienti e ricchi di vitamine.", 23.99, new Type("Cane"), ["Manzo", "Maiale"], "Carne");
 $tonnoFresh = new Food("Tonno Fresh", 2, "tranci di salmone e branzino.", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxStx5wKTI34cMjQDT2mY9uyhNwj7P_LsIpw&s", "Adatti per ogni razza di gatto. Da leccarsi i baffi.", 18.99, new Type("Gatto"), ["Salmone", "Branzino"], "Pesce");

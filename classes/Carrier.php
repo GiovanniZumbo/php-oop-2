@@ -9,6 +9,9 @@ class Carrier extends Product
     public $colours;
     public $dimensions;
 
+    public $price;
+    public $isAvailable;
+
     //| Constructor
 
     function __construct(
