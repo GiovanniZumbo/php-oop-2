@@ -43,7 +43,7 @@ class Product
         return "Prezzo: " . $this->price . "€ (al pezzo).";
     }
 
-    public function setPrice(float $price)
+    public function setPrice($price)
     {
         if ($price > 0) {
             $this->price = $price;

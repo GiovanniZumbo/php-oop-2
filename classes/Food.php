@@ -33,7 +33,6 @@ class Food extends Product
 
     public function getInfo()
     {
-
         return
             "<li> Ingredienti: " . $this->ingredients[0] . ", " . $this->ingredients[1] . "</li>
             <li> Gusto: " . $this->flavour . ".</li>";

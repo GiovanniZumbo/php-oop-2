@@ -9,7 +9,7 @@ class Carrier extends Product
     public $colours;
     public $dimensions;
 
-    public $price;
+    public float $price;
     public $isAvailable;
 
     //| Constructor
